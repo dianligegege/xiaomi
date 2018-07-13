@@ -137,7 +137,7 @@ body {
 }
 #sou-left {
 	position: absolute;
-	rigth:54px
+	height:54px;
 	width: 245px;
 }
 #sl-in {
@@ -151,11 +151,16 @@ body {
 #sl-in:focus {
 	border-color:#FF6700 ;
 }
+#sl-in:focus+#sl-two {
+	display: none;
+}
+#sl-in:focus+.bianbo {
+	border: #ff6700 !important;
+}
 #sl-two {
 	position: absolute;
 	right: 9px;
 	top: 0px;
-	
 }
 #sl-two span {
 	display: inline-block;
@@ -175,7 +180,8 @@ body {
 	width: 50px;
 	height: 48px;
 	position: absolute;
-	right:0px;
+	right:-50px;
+	top: 0px;
 	border: 1px solid #e0e0e0;
 	border-left: none;
 }
@@ -191,6 +197,8 @@ body {
 }
 #sou-right:hover{
 	background-color: #ff6700;
+}
+#sou-right:hover i {
 	color: white;
 }
 /*#sou-right i {
@@ -310,6 +318,7 @@ iframe {
 	width: 1260px;
 	height: 347px;
 	border: 0;
+	scrolling:none;
 }
 
 #aside {
