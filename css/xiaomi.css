@@ -175,6 +175,7 @@ body {
 #sl-two span:hover {
 	background-color: #ff6700;
 	color: white;
+	transition: all 0.2s; 
 }
 #sou-right {
 	width: 50px;
@@ -197,9 +198,12 @@ body {
 }
 #sou-right:hover{
 	background-color: #ff6700;
+	transition: all 0.1s;
 }
 #sou-right:hover i {
 	color: white;
+	transition: all 0.1s;
+	
 }
 /*#sou-right i {
 	width: 50px;
@@ -212,6 +216,7 @@ body {
 	background-size: contain;
 	cursor: pointer;
 	position: relative;
+	transition: all 0.7s;
 }
 #lunbo-right {
 	position: absolute;
@@ -263,6 +268,7 @@ body {
 	background-color: #FFF !important;
 	background-color: rgba(255,255,255,0.3) !important;
 	border-color: rgba(0,0,0,0.4) !important;
+	transition: all 0.2s;
 }
 #lunbo-left {
 	padding: 20px 0;

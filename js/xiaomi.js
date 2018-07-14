@@ -6,7 +6,7 @@ var obj;
 
 //页面加载完毕设置定时器
 function init (){
-	dingshi=window.setInterval("lunbo()",3000);
+	dingshi=window.setInterval("lunbo()",4000);
 }
 
 //列表和图片同步
