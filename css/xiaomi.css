@@ -12,6 +12,9 @@ body {
 	"Microsoft Yahei","Hiragino Sans GB","Heiti SC",
 	"WenQuanYi Micro Hei",sans-serif;
 }
+a {
+	text-decoration: none;
+}
 .clearfloat {
 	clear: both;
 }
@@ -87,11 +90,13 @@ body {
 	text-align: center;
 	background-color: #424242;
 	margin-left: 15px;
+	cursor: pointer;
+	z-index: 50;
 }
 #nav-right li:nth-child(4):hover  {
 	background-color: white;
 }
-#nav-right li:nth-child(4):hover+#nr-tanchu {
+#nr-fouth:hover #nr-tanchu {
 	display: block;
 }
 #nav-right li:nth-child(4):hover a {
@@ -107,7 +112,7 @@ body {
 	float: none !important;
 	background-color: white;
 	z-index: 10;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
 	display: none;
 }
 #nr-tanchu span {
@@ -163,6 +168,7 @@ body {
 	position: absolute;
 	height:54px;
 	width: 245px;
+	transition: all 0.2s;
 }
 
 #sl-in {
@@ -175,15 +181,21 @@ body {
 }
 #sl-in:hover+#si-yingxiang #sou-right,#sl-in:hover {
 	border-color: #B3B3B3;
+	transition: all 0.2s;
+	
 }
 #sl-in:focus {
 	border-color:#FF6700 ;
+	
 }
 #sl-in:focus+#si-yingxiang #sl-two {
 	display: none;
 }
 #sl-in:focus+#si-yingxiang #sou-right {
 	border-color: #FF6700 ;
+}
+#sl-in:focus+#si-yingxiang #st-xuan {
+	display: block;
 }
 #sl-two {
 	position: absolute;
@@ -203,8 +215,11 @@ body {
 #sl-two span:hover {
 	background-color: #ff6700;
 	color: white;
-	transition: all 0.2s; 
+	transition: all 0.3s; 
 }
+/*#si-yingxiang {
+	position: relative;
+}*/
 #sou-right {
 	width: 50px;
 	height: 48px;
@@ -214,7 +229,35 @@ body {
 	border: 1px solid #e0e0e0;
 	border-left: none;
 }
-
+#st-xuan {
+	z-index: 500;
+	position: absolute;
+	width: 243px;
+	background-color: #fff;
+	border: 1px solid #FF6700;
+	border-top: none !important;
+	display: none;
+}
+#st-xuan a {
+	display: inline-block;
+	padding: 6px 15px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: rgb(66,66,66);
+	font-weight: 400;
+	line-height: 18px;
+	position: relative;
+}
+#st-xuan a:hover {
+	background-color: #FAFAFA;
+}
+#st-xuan a span:nth-child(2) {
+	color: rgb(176,176,176);
+	position: absolute;
+	top: 6px;
+	right: 15px;
+}
 .icon-sousuo {
 	position: absolute;
 	font-size: 24px;
@@ -324,7 +367,7 @@ body {
 	top: 0;
 	left: 234px;
 	border: 1px solid #E0E0E0;
-	background-color: #FFFDEF;
+	background-color: #FFFFFF;
 	box-shadow: 0px 8px 16px rgba(0,0,0,0.18);
 	display: none;
 	z-index: 10;
@@ -338,7 +381,7 @@ body {
 	width: 256px;
 	height: 76px;
 	box-sizing: border-box;
-	padding: 18px 20px;
+	padding: 18px 10px 18px 15px;
 	cursor: pointer;
 }
 .ll-tanchu ul li:hover span {
