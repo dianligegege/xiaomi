@@ -75,3 +75,22 @@ function xianshitu (n,t) {
 	litong();
 	return i;
 }
+
+//搜索框焦点变色
+//function bianse() {
+//	var souri=document.getElementById("sou-right");
+//	souri.style.borderColor="#FF6700";
+//}
+//function bianhui() {
+//	var souri=document.getElementById("sou-right");
+//	souri.style.borderColor="#E0E0E0";
+//}
+//搜索框hover变色
+//function siover() {
+//	var soule = document.getElementById("sl-in");
+//	soule.style.borderColor="#b3b3b3";
+//}
+//function siout (){
+//	var soule = document.getElementById("sl-in");
+//	soule.style.borderColor="#E0E0E0";
+//}
